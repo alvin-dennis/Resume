@@ -1,0 +1,176 @@
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-resume}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{awesome-skyblue}
+\colorlet{headerbarcolor}{darkblue}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{black}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\name{Alvin Dennis}
+\tagline{Aspiring and enthusiastic student seeking to leverage my potential to make a positive impact. Eager to learn, adapt, and contribute effectively as a fresh and dynamic addition to your team. Eager to embrace opportunities for growth, I am enthusiastic about making meaningful contributions to your organization while continuously learning and evolving in a dynamic work environment.  }
+\photo[round]{picture.jpg}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contact}
+    
+    \email{alvindennis80@gmail.com}
+    \phone{+91 9747153663}
+    \location{Kerala, India}
+    \vspace{0.5em}
+    \homepage{alvindennis.com}{https://www.alvindennis.vercel.app}
+    \github{@Alvin-Dennis}{https://github.com/alvin-dennis}
+    \linkedin{Alvin Dennis}{https://www.linkedin.com/in/alvin-dennis-0a70ba163/}
+    
+    \section{Skills}
+    
+    \section{Programming}
+    \skill{Python}{5}
+    \skill{Django}{4}
+    \skill{Javascript}{3}
+    \skill{Typescript}{3}
+    \skill{HTML/CSS}{4}
+    \skill{LaTeX}{4}
+    \skill{React}{3}
+
+    
+    \vspace{0.5em}
+    \section{Operating Systems}
+    \skill{Linux}{4}
+    \skill{MacOS}{3}
+    \skill{Windows}{5}
+    
+    \vspace{0.5em}
+    \section{Software \& Tools}
+    \skill{Visual Studio Code}{5}
+    \skill{Figma}{4}
+    \skill{Vercel}{4}
+    \skill{GitHub}{4}
+    \skill{MySql}{4}
+    
+
+    
+    \vspace{0.5em}
+    \section{Languages}
+    \skill{Malayalam}{5}
+    \skill{English}{5}
+    \skill{Hindi}{3}
+    \bigskip
+    
+    \section{Certifications}
+    \simpleskill{Responsive Web Design-FreeCodeCamp}
+    \simpleskill{Postman API Student Expert}
+    \simpleskill{}
+
+}
+\mainbar{
+    \section{About Me}
+    I'm Alvin Dennis, a passionate B.Tech student majoring in Electrical and Electronics Engineering. I thrive on exploring the intersection of technology and creativity, with a keen interest in both the technical world and the realm of music.
+
+In my academic journey, I delve into subjects that range from circuit design and power systems to digital electronics, constantly seeking to expand my knowledge and skills in the field. The challenge of solving complex problems and the ever-evolving nature of technology keep me motivated and excited about my studies.
+
+Beyond the academic sphere, I'm a tech enthusiast who loves to experiment with the latest gadgets, explore coding projects, and stay updated on emerging trends in the tech industry. My curiosity extends to the world of music, where I find solace in composing and listening to diverse genres.
+    
+    \section[\faGears]{Experience}
+    \job{20/10/2023-Present}
+        {Gtech Mulearn, Trivandrum}
+        {Interest Group Management Intern}
+        {Currently working as a Quality Assurance Interest Group Lead Intern}
+    \job{02/05/2023 - 07/05/2023}
+        {Kerala State Electricity Board Limited\\Kuravilangad}
+        {Student Intern}
+        {}
+    
+    \section[\faMortarBoard]{Education}
+    \job{12/2021 - Present}
+        {St. Joseph's College of Engineering and Technology}
+        {B.Tech in Electrical and Electronics }
+        {}
+
+    \job{2019 - 2021}
+        {Sharjah Indian School}
+        {Higher Secondary Education}
+        {}
+    \job{2014 - 2019}
+        {Sharjah Indian School}
+        {High School Education}
+        {}
+    
+
+    \section{Achievements, honours and awards}
+    \achievement{My first achievement}
+    \achievement{My second achievement}
+
+    \section{General Skills}
+    \smallskip % additional skip because tag outlines use up space
+    \tag{Web Development and coding }
+    \tag{Communication Skills }
+    \tag{Teamwork }
+    \tag{Adaptability }
+    \tag{Technical Proficiency }
+    \tag{Quality Assurance Tester}
+    \tag{Critical Thinking }
+    \tag{Attention to Detail }
+    \tag{UI/UX Design  }
+    \tag{Leadership }
+    \tag{Web Designing }
+    \tag{Operating Systems  }
+    \tag{Public Relations }
+    \tag{IT Support }
+    \tag{Internet of Things }
+    \tag{Decision Making }
+    \tag{Firebase}
+    \tag{Database Management }
+    \tag{Task Prioritization }
+    \tag{Networking }
+
+}
+\makebody
+\clearpage
+\pagestyle{highlightmain}
+
+% The highlightbar needs to be filled to display mainbar contents correctly in singlesised mode
+% For an empty highlightbar, fill with empty space
+\end{document}
