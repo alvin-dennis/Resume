@@ -110,7 +110,7 @@
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
-\definecolor{darkblue}{HTML}{00008B}
+\definecolor{dark-blue}{HTML}{00008b}
 % Text colors
 \definecolor{darktext}{HTML}{414141}
 \colorlet{text}{darkgray}

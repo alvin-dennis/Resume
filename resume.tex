@@ -1,0 +1,214 @@
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-resume}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{geometry}
+\setmainfont{Carlito}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{white}
+\colorlet{headerbarcolor}{white}
+
+\colorlet{headerfontcolor}{black}
+\colorlet{accent}{black}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\name {Alvin Dennis}
+\tagline {Dynamic Electrical Engineering student focused on innovation in power systems and \\ electronics, with a keen interest in technology, UI/UX designing, web development, and \\ software testing. Eager to leverage technical skills and creativity to contribute to \\ projects and deliver impactful solutions.}
+\photo[square]{picture.jpg}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contact}
+    
+    \email {alvindennis80@gmail.com}
+    \phone {+91 9747153663}
+    \location {Kottayam, Kerala}
+    \vspace{0.5em}
+    \homepage {alvindennis.me}{https://alvindennis.vercel.app/}
+    \github {@alvin-dennis}{https://github.com/alvin-dennis}
+    \linkedin {Alvin Dennis}{https://www.linkedin.com/in/alvin-dennis-0a70ba163/}
+    
+    \section{Skills}
+    
+    \subsection {Programming}
+    \begin{itemize}
+        \item {Python}
+        \item {Django}
+        \item {HTML/CSS}
+        \item {Javascript}
+        \item {React.js}
+        \item {Vue.js}
+        \item {Astro}
+        \item {Markdown}
+        \item {LaTeX}
+        \item {C}
+    \end{itemize}
+    
+    \vspace{0.5em}
+    \subsection {Software \& Tools}
+    \begin{itemize}
+        \item {Visual Studio Code}
+        \item {Firebase}
+        \item {MySQL}
+        \item {MongoDB}
+        \item {Prisma}
+        \item {Postman}
+        \item {Google Cloud}
+        \item {Selenium}
+        \item {Matlab}
+        \item {Figma}
+        \item {Bash}
+        \item {Git \& GitHub}
+        \item {GitHub Actions}
+        \item {Notion}  
+        \item {Arduino IDE}
+        \item {Vercel}
+        \item {Netlify}
+    \end{itemize}
+    
+    \vspace{0.5em}
+    
+    \subsection{Certifications}
+    \begin{itemize}
+        \item {Responsive Web Design certification from FreeCodeCamp}
+        \item {API Fundamentals Student Expert \\ certification from Postman}
+    \end{itemize}
+
+}
+\mainbar{
+    \section[\faGears]{Experience}
+    \job{June 2024 - Present}
+        {PHICSIT}
+        {Frontend Web Developer Intern}
+        {}
+    \job{March 2024 - Present}
+        {Gtech Mulearn SJCET}
+        {IoT IG Lead}
+        {}
+     \job{November 2023 - June 2024}
+        {Radio Community SJCET}
+        {Technical Lead}
+        {}
+    \job{September 2023 - Present}
+        {Startup Bootcamp SJCET - IEDC}
+        {Chief Finance Officer}
+        {}
+    \job{June 2022 - August 2023}
+        {Startup Bootcamp SJCET - IEDC}
+        {Technical Officer}
+        {}
+    \job{October 2023 - March 2024}
+        {GTech MuLearn}
+        {QA Interest Group Lead Intern}
+        {}
+    \section[\faMortarBoard]{Education}
+    \job{12/2021 - Present}
+        {St. Joseph's College of Engineering \\ and Technology, Palai}
+        {B.Tech in Electrical and Electronics \\ Engineering }
+        {}
+    \job{2019 - 2021}
+        {Sharjah Indian School, Sharjah}
+        {Higher Secondary Education}
+        {}
+    \job{2014 - 2019}
+        {Sharjah Indian School, Sharjah}
+        {High School Education}
+        {}
+    
+
+    \section{Projects}
+    \begin{itemize}
+
+        \item \textbf{Portfolio Website} \hfill \href{https://github.com/alvin-dennis/Personal-Portfolio-2.0}{View GitHub}
+    \begin{itemize}
+        \item {A personal developer portfolio developed using Astro and React.js.}
+   \end{itemize}
+
+       \item \textbf{Event Dashboard} \hfill \href{https://github.com/alvin-dennis/Sjcet-Events}{View GitHub}
+   \begin{itemize}
+      \item { A event dashboard web application developed using Vue.js and Firebase.}
+   \end{itemize}
+
+      \item \textbf{AutoLux-Store} \hfill \href{https://github.com/alvin-dennis/AutoLux-Store}{View GitHub}
+   \begin{itemize}
+      \item Developed a full stack e-commerce website using Next.js and MongoDB.
+   \end{itemize}
+
+      \item \textbf{AutoLux-Admin} \hfill \href{https://github.com/alvin-dennis/AutoLux-Admin}{View GitHub}
+   \begin{itemize}
+      \item Developed an admin dashboard using Next.js and MongoDB for AutoLux-Store to monitor the sales and manage products
+   \end{itemize}
+
+      \item \textbf{Resume} \hfill \href{https://github.com/alvin-dennis/Resume}{View GitHub}
+   \begin{itemize}
+      \item Designed and developed a professional resume using LaTeX.
+   \end{itemize}
+
+   \end{itemize}
+
+    \section{General Skills}
+    \begin{multicols}{2}
+    \raggedright
+    \begin{itemize}[noitemsep]
+        \item Computer Skills
+        \item Time Management
+        \item Communication Skills
+        \item Teamwork
+        \item Leadership and Mentoring
+        \item Adaptability
+        \item Technical Proficiency
+        \item Critical Thinking
+        \item Analytical Thinking
+        \item Flexibility
+        \item Attention to Detail
+        \item Decision Making
+        \item Task Prioritization
+        \item Networking
+    \end{itemize}
+    \end{multicols}   
+    \medskip
+
+}
+\makebody
+\clearpage
+
+\end{document}
