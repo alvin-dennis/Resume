@@ -10,7 +10,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \setlength\highlightwidth{8cm}
-\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\headerheight{2.5cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
 \setlength\marginleft{1cm}
 \setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
 \setlength\margintop{1cm}
@@ -25,6 +25,7 @@
 \usepackage{multicol}
 \usepackage{enumitem}
 \usepackage{geometry}
+\usepackage{siunitx}
 \setmainfont{Carlito}
 
 
@@ -50,8 +51,7 @@
 \begin{document}
 
 \name {Alvin Dennis}
-\tagline {Dynamic Electrical Engineering student focused on innovation in power systems and \\ electronics, with a keen interest in technology, UI/UX designing, web development, and \\ software testing. Eager to leverage technical skills and creativity to contribute to \\ projects and deliver impactful solutions.}
-\photo[square]{picture.jpg}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+\tagline {Dynamic Electrical Engineering student skilled in IoT, circuit design, renewable energy systems, and automation, proficient in UI/UX design, web development, and software testing, adaptable and disciplined, with strong teamwork abilities and event management experience, committed to delivering innovative and impactful solutions.}
 
 \makeheader
 
@@ -63,97 +63,89 @@
     \phone {+91 9747153663}
     \location {Kottayam, Kerala}
     \vspace{0.5em}
-    \homepage {alvindennis.me}{https://alvindennis.vercel.app/}
+    \homepage {alvindennis.tech}{https://alvindennis.tech}
     \github {@alvin-dennis}{https://github.com/alvin-dennis}
     \linkedin {Alvin Dennis}{https://www.linkedin.com/in/alvin-dennis-0a70ba163/}
     
     \section{Skills}
-    
     \subsection {Programming}
-    \begin{itemize}
-        \item {Python}
-        \item {Django}
-        \item {HTML/CSS}
-        \item {Javascript}
-        \item {React.js}
-        \item {Vue.js}
-        \item {Astro}
-        \item {Markdown}
-        \item {LaTeX}
-        \item {C}
-    \end{itemize}
+        \skill {Python} {4}
+        \skill {Django} {3}
+        \skill {HTML/CSS} {4}
+        \skill {Javascript} {3}
+        \skill {React.js} {3}
+        \skill {Vue.js} {3}
+        \skill {Astro} {3}
+        \skill {Jekyll} {3}
+        \skill {Markdown} {4}
+        \skill {LaTeX} {3}
+        \skill {C} {2}
     
     \vspace{0.5em}
     \subsection {Software \& Tools}
-    \begin{itemize}
-        \item {Visual Studio Code}
-        \item {Firebase}
-        \item {MySQL}
-        \item {MongoDB}
-        \item {Prisma}
-        \item {Postman}
-        \item {Google Cloud}
-        \item {Selenium}
-        \item {Matlab}
-        \item {Figma}
-        \item {Bash}
-        \item {Git \& GitHub}
-        \item {GitHub Actions}
-        \item {Notion}  
-        \item {Arduino IDE}
-        \item {Vercel}
-        \item {Netlify}
-    \end{itemize}
+        \skill {Visual Studio Code} {4}
+        \skill {Firebase} {4}
+        \skill {MySQL} {3}
+        \skill {MongoDB} {4}
+        \skill {Postman} {2}
+        \skill {Matlab} {3}
+        \skill {Figma} {4}
+        \skill {Bash} {3}
+        \skill {Git \& GitHub} {4}
+        \skill {GitHub Actions} {4}
+        \skill {Notion} {3}
+        \skill {Vercel} {4}
+        \skill {Netlify} {4}
     
     \vspace{0.5em}
     
     \subsection{Certifications}
     \begin{itemize}
-        \item {Responsive Web Design certification from FreeCodeCamp}
-        \item {API Fundamentals Student Expert \\ certification from Postman}
+        \item {Responsive Web Design certification from FreeCodeCamp - December 28, 2023}
+        \item {API Fundamentals Student Expert \\ certification from Postman - January 11, 2024}
     \end{itemize}
 
 }
 \mainbar{
     \section[\faGears]{Experience}
-    \job{June 2024 - Present}
-        {PHICSIT}
-        {Frontend Web Developer Intern}
-        {}
     \job{March 2024 - Present}
         {Gtech Mulearn SJCET}
-        {IoT IG Lead}
-        {}
-     \job{November 2023 - June 2024}
-        {Radio Community SJCET}
-        {Technical Lead}
+        {Campus  Co-Lead}
         {}
     \job{September 2023 - Present}
         {Startup Bootcamp SJCET - IEDC}
         {Chief Finance Officer}
         {}
-    \job{June 2022 - August 2023}
-        {Startup Bootcamp SJCET - IEDC}
-        {Technical Officer}
+     \job{November 2023 - June 2024}
+        {Radio Community SJCET}
+        {Technical Lead}
+        {}
+     \job{June 2024 - November 2024}
+        {PHICSIT}
+        {Frontend Web Developer Intern }
         {}
     \job{October 2023 - March 2024}
         {GTech MuLearn}
         {QA Interest Group Lead Intern}
         {}
+    \job{June 2022 - August 2023}
+        {Startup Bootcamp SJCET - IEDC}
+        {Technical Officer}
+        {}
+        
     \section[\faMortarBoard]{Education}
     \job{12/2021 - Present}
         {St. Joseph's College of Engineering \\ and Technology, Palai}
-        {B.Tech in Electrical and Electronics \\ Engineering }
+        {B.Tech in Electrical and Electronics \\ Engineering \\ CGPA - 5.01 (up to S5)}
         {}
     \job{2019 - 2021}
         {Sharjah Indian School, Sharjah}
-        {Higher Secondary Education}
+        {Higher Secondary Education \\ Percentage - \qty{85}{\percent}}
         {}
     \job{2014 - 2019}
         {Sharjah Indian School, Sharjah}
-        {High School Education}
+        {High School Education \\ Percentage - \qty{86}{\percent} }
         {}
-    
 
     \section{Projects}
     \begin{itemize}
@@ -165,47 +157,31 @@
 
        \item \textbf{Event Dashboard} \hfill \href{https://github.com/alvin-dennis/Sjcet-Events}{View GitHub}
    \begin{itemize}
-      \item { A event dashboard web application developed using Vue.js and Firebase.}
+      \item { A event management web application developed using Vue.js and Firebase.}
    \end{itemize}
 
-      \item \textbf{AutoLux-Store} \hfill \href{https://github.com/alvin-dennis/AutoLux-Store}{View GitHub}
+      \item \textbf{AutoLux-Store} \hfill \href{https://github.com/alvin-dennis/AutoLux}{View GitHub}
    \begin{itemize}
       \item Developed a full stack e-commerce website using Next.js and MongoDB.
    \end{itemize}
-
-      \item \textbf{AutoLux-Admin} \hfill \href{https://github.com/alvin-dennis/AutoLux-Admin}{View GitHub}
-   \begin{itemize}
-      \item Developed an admin dashboard using Next.js and MongoDB for AutoLux-Store to monitor the sales and manage products
-   \end{itemize}
-
-      \item \textbf{Resume} \hfill \href{https://github.com/alvin-dennis/Resume}{View GitHub}
-   \begin{itemize}
-      \item Designed and developed a professional resume using LaTeX.
-   \end{itemize}
-
    \end{itemize}
 
     \section{General Skills}
     \begin{multicols}{2}
     \raggedright
     \begin{itemize}[noitemsep]
-        \item Computer Skills
+        \item Mentoring
         \item Time Management
         \item Communication Skills
         \item Teamwork
-        \item Leadership and Mentoring
+        \item Leadership
         \item Adaptability
         \item Technical Proficiency
         \item Critical Thinking
-        \item Analytical Thinking
-        \item Flexibility
         \item Attention to Detail
         \item Decision Making
-        \item Task Prioritization
-        \item Networking
     \end{itemize}
     \end{multicols}   
-    \medskip
 
 }
 \makebody
