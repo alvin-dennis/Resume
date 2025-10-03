@@ -57,14 +57,12 @@
 * **Github Copilot** – Advanced models for NLP, reasoning, and code generation.
 * **Google Gemini** – Multimodal AI models supporting text, code, and research applications.
 * **Ollama** – Local runtime for managing and running large language models directly on personal systems.
-* **Hugging Face Hub** – Centralized platform for hosting, sharing, and fine-tuning LLMs and other ML models.
 ---
 
 ## 8. AI Tools You Frequently Use 🛠️
 
 * **Streamlit apps for AI solutions** – Rapid prototyping of ML apps.
 * **OpenAI Playground / API** – Testing and prototyping language models.
-* **Hugging Face Hub** – Repository of models and datasets.
 * **RoboFlow** – Dataset management and model training for computer vision.
 
 ---
